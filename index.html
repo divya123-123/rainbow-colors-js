@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <style>
+
+    body{
+
+      margin-top: 400px;
+
+      display: flex;
+
+      text-align: center;
+
+      justify-content: center;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <button>Click ME!</button>
+
+</body>
+
+<script>
+
+  const button=document.querySelector("button");
+
+  const body=document.querySelector("body");
+
+  const color=['violet','indigo','blue','green','yellow','orange','red'];
+
+  body.style.backgroundColor='skublue';
+
+  document.addEventListener('click',function(){
+
+    const colorIndex=parseInt(Math.random()*color.length);
+
+    body.style.backgroundColor=color[colorIndex];
+
+  });
+
+</script>
+
+</html>
